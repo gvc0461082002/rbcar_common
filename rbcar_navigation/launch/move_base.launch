@@ -22,6 +22,9 @@
 		<remap from="odom" to="$(arg odom_topic)" />
 
 		<param name="SBPLLatticePlanner/primitive_filename" value="$(find rbcar_navigation)/config/$(arg primitive_filename)" />
+
+   		<param name="controller_frequency" value="15.0"/>
+    		<param name="local_costmap/update_frequency" value="15.0"/>
 	</node>
 
 </launch>
